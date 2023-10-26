@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>balises de formulaires</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form>
+        <fieldset> <legend>Formulaires d'inscription</legend>
+            <fieldset>
+                <legend>Civilité</legend>
+               <label><input type="radio" name="radiocivilite" value="Mr." checked>Mr.</label>
+               <br><label><input type="radio" name="radiocivilite" value="Mme.">Mme.</label>
+               <br><label><input type="radio" name="radiocivilite" value="Mlle.">Mlle.</label>
+        </fieldset>
+        <fieldset> <legend>Identification</legend>
+        Nom <input type="text" placeholder="Saisir votre nom en majuscule..." size="60"></br>
+        <br> Prénom <input type="text"></br>
+        <br> Mot de passe <input type="password" maxlength="10"></br>
+        <br>Mois et année de naissance 
+        <select>
+            <option>Septembre</option>
+            <option>Octobre</option>
+            <option>Novembre</option>
+            <option>Decembre</option>
+        </select> 
+        <select>
+            <option>1990</option>
+            <option>1991</option>
+            <option>1992</option>
+            <option>1993</option>
+            <option>1994</option>
+            <option>1995</option>
+        </select>
+    </fieldset>
+    <fieldset> <legend>Formation</legend>
+    Diplomes
+    <br><label><input type="checkbox" checked>License</label>
+    <br><label><input type="checkbox" checked>Master</label>
+    <br><label><input type="checkbox">DEA</label>
+    <br><label><input type="checkbox">Doctorat</label>
+    <p><label>Lieu de résidence
+        <br><select size="3" name="pays" multiple="multiple">
+            <optgroup label="Europe">
+                <option value="fr">France</option>
+                <option value="ru">Royaume Uni</option>
+                <option value="Al">Allemagne</option>
+            </optgroup>
+        </select></label>
+     </p>
+    </fieldset>
+    <fieldset> <legend>Fichiers a envoyer</legend>
+    Votre CV <input type="file"></br>
+    <br>Vos commentaires
+    <br><textarea name="commentaires"cols="37" rows="5" placeholder=" Ne copier pas votre CV dans cette case ..."></textarea></fieldset>
+    <br><input type="submit" value="Valider">
+        <input type="reset" value="Annuler">
+        </fieldset>
+        </form>
+        <a href="../index.html">Accueil</a>
+    </body>
+</html>
